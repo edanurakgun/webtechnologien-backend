@@ -1,15 +1,27 @@
 package com.example.demo;
 
 public class Travelling {
+    private Long id;
     private String ziel;
     private String startDatum;
     private String endDatum;
     private boolean status;
 
-    public Travelling(String ziel) {
+    public Travelling(Long id, String ziel, String startDatum, String endDatum, boolean status) {
+        this.id = id;
         this.ziel = ziel;
+        this.startDatum = startDatum;
+        this.endDatum = endDatum;
+        this.status = status;
     }
 
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
 
     public String getZiel() {
         return ziel;
