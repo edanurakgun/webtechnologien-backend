@@ -12,6 +12,7 @@ public class WebConfig implements WebMvcConfigurer {
         registry.addMapping("/**")
                 .allowedMethods("GET", "POST", "PUT", "DELETE")
                 .allowedOrigins("http://localhost:5173",
-                        "https://webtechnologien-frontend-561z.onrender.com");
+                        "https://webtechnologien-frontend-561z.onrender.com",
+                        "https://webtechnologien-frontend.onrender.com");
     }
 }
