@@ -28,7 +28,7 @@ public class TravelController {
 
     @GetMapping("/travellings/{id}")
     public Travelling getTravelling(@PathVariable String id) {
-        logger.info("GET request on route things with {}", id);
+        logger.info("GET request on route travellings with {}", id);
         Long travellingId = Long.parseLong(id);
         return service.get(travellingId);
     }
