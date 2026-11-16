@@ -16,9 +16,9 @@ public class TravelController {
 
     @GetMapping("/")
     public List<Travelling> index() {
-        return List.of(new Travelling(1L, "Berlin", "01.10.2026", "15.10.2026", true),
-                new Travelling(2L, "Paris", "22.10.2026", "25.10.2026", false),
-                new Travelling(3L, "Rom", "03.11.2026", "10.11.2026", false));
+        return List.of(new Travelling("Berlin", "01.10.2026", "15.10.2026", true, "Eda"),
+                new Travelling("Paris", "22.10.2026", "25.10.2026", false, "Eda"),
+                new Travelling("Rom", "03.11.2026", "10.11.2026", false, "Yuliya"));
     }
 
     @PostMapping("/travellings")
